@@ -28,9 +28,10 @@
         "audios"
       ]
     },
-    "uid": {
+    "slug": {
       "type": "uid",
-      "targetField": "name"
+      "targetField": "name",
+      "required": true
     },
     "description": {
       "type": "blocks",
