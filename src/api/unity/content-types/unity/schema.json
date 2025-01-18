@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unities",
+  "info": {
+    "singularName": "unity",
+    "pluralName": "unities",
+    "displayName": "Unity",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "description": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}
